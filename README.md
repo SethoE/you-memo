@@ -12,5 +12,3 @@ For example:
 - Brushing up on geography
 - Mastering long poems
 - Even practicing guitar chords and much more!
-
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
