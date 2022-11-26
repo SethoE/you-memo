@@ -18,8 +18,11 @@ class User extends Authenticatable
      * @var array<int, string>
      */
     protected $fillable = [
-        'name',
+        'first_name',
+        'role_id',
+        'last_name',
         'email',
+        'email_verified_at',
         'password',
     ];
 
@@ -41,4 +44,16 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function deck() {
+        return $this->hasMany(Deck::class, 'user_id');
+    }
+
+    public function user_log() {
+        return $this->hasMany(User_log::class, 'user_id');
+    }
+
+    public function role() {
+        return $this->belongsTo(Role::class, 'role_id');
+    }
 }

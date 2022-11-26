@@ -13,14 +13,12 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('decks', function (Blueprint $table) {
-            $table->id('deck_id');
+        Schema::create('user_logs', function (Blueprint $table) {
+            $table->id('user_log_id');
             $table->foreignId('user_id')->references('user_id')->on('users')->onDelete('cascade');
-            $table->string('deck_name');
-            $table->boolean('deck_status')->default(false);
-            $table->timestamp('last_used_at')->nullable();
-            $table->timestamp('active_since')->nullable();
-            $table->timestamps();
+            $table->dateTime('date_time');
+            $table->ipAddress('ipAddress');
+            $table->string('event');
         });
     }
 
@@ -31,6 +29,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('decks');
+        Schema::dropIfExists('user_logs');
     }
 };
