@@ -5,9 +5,9 @@ namespace Database\Factories;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\UserRole>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Content_type>
  */
-class UserRoleFactory extends Factory
+class Content_typeFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -17,7 +17,7 @@ class UserRoleFactory extends Factory
     public function definition()
     {
         return [
-            'role_name' => fake()->randomElement(['user', 'admin']),
+            //
         ];
     }
 }

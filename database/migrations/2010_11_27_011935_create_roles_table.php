@@ -11,19 +11,11 @@ return new class extends Migration
      *
      * @return void
      */
-
-     
-    // 1 = text, 2 = audio, 4 = video
-    // text and audio = 3
-    // text and video = 5
-    // audio and video = 6 example: gif + audio
-    // text, audio and video = 7
     public function up()
     {
-        Schema::create('content_typs', function (Blueprint $table) {
-            $table->id('content_typ_id');
-            $table->integer('content_typ_number');
-            $table->string('content_typ_name');
+        Schema::create('roles', function (Blueprint $table) {
+            $table->id('role_id');
+            $table->string('role_name');
             $table->timestamps();
         });
     }
@@ -35,6 +27,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('content_typs');
+        Schema::dropIfExists('roles');
     }
 };

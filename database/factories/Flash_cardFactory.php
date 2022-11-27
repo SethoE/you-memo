@@ -23,7 +23,7 @@ class Flash_cardFactory extends Factory
             'ease_factor' => fake()->numberBetween(1.3, 2.5),
             'interval' => fake()->numberBetween(0,30),
             'repetitions' => fake()->numberBetween(0, 4),
-            'learning_stage' => fake()->randomElement(['learning', 'retaining']),
+            'learning_stage' => fake()->randomElement(['learning', 'retaining', "new"]),
             'time_zone' => fake()->randomElement(['CET', 'CST']),
         ];
     }

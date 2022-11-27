@@ -1,0 +1,32 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    background-color: #62929E;
+}
+
+.about h2 {
+    color: white;
+    text-align: center;
+}
+
+.aboutContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.aboutContent p {
+    color: white;
+    margin-left: 30px;
+}
+.aboutContent a {
+    color: white;
+    margin-left: 5px;
+    text-decoration: none;
+}

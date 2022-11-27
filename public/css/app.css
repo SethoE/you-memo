@@ -5,17 +5,47 @@ html, body {
   margin: 0 !important;
   min-width: 860px;
   width: auto !important;
-  background-color: var(--);
+  height: 100%;
+  background-color: var(--isabelline);
 }
 
 
 :root {
   --prussian-blue: #003554ff;
+  --prussian-dark: #032335;
   --carolina-blue: #449dd1ff;
   --isabelline: #f4f3eeff;
   --rich-black-fogra-29: #051923ff;
   --forest-green-crayola: #6baa75ff;
 }
 
-body {
+.mainContainer {
+  margin-top: 60px;
+  width: 100%;
+  height: 100%;  
+}
+
+/*Style for the sidebar*/
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 2px 2px 2px grey;
+  border-radius: 0px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #a9a9a9;
+  border-radius: 7px 7px 7px 7px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #636363;
 }

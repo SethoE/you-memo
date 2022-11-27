@@ -1,0 +1,68 @@
+.paddingTop {
+    padding-top: 20px;
+}
+
+.formContainer {
+    padding: 2.5rem;
+    border-width: 1px;
+    border-radius: 0.25rem;
+    max-width: 32rem;
+    margin-top: 6rem;
+    margin-left: auto;
+    margin-right: auto;
+    --tw-bg-opacity: 1;
+    background-color: rgb(249 250 251 / var(--tw-bg-opacity));
+}
+.errorMessage {
+    --tw-text-opacity: 1;
+    color: rgb(239 68 68 / var(--tw-text-opacity));
+    font-size: 0.75rem;
+    line-height: 1rem;
+    margin-top: 0.25rem;
+    margin: 0;
+}
+.formLine {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 1.5rem
+}
+
+.labelText {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    display: inline-block;
+    margin-bottom: 0.5rem
+}
+.submitButton {
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    --tw-bg-opacity: 1;
+    background-color: var(--prussian-blue);
+    border: solid 1px;
+    border-radius: 0.25rem
+}
+
+.submitButton:hover {
+    border: solid 1px black;
+    background-color: var(--prussian-dark);
+}
+
+.inputField {
+    padding: 0.5rem;
+    --tw-border-opacity: 1;
+    border-color: rgb(229 231 235 / var(--tw-border-opacity));
+    border-width: 1px;
+    border-radius: 0.25rem;
+    width: 100%;
+}
+
+
+.linkBlue {
+    --tw-text-opacity: 1;
+    color: var(--carolina-blue);
+}

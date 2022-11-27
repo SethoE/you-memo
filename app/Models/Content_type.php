@@ -5,12 +5,13 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Content_typ extends Model
+class Content_type extends Model
 {
     use HasFactory;
+
     protected $fillable = [
-        'content_typ_number',
-        'content_typ_name',
+        'content_type_number',
+        'content_type_name',
     ];
 
     public function flash_card_answer() {

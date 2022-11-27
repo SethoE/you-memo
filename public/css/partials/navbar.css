@@ -1,3 +1,107 @@
+#designLogo {
+    height: 60px;
+    background-color: white;
+}
+
+.logoutForm {
+    display: inline;
+    text-align: center;
+    padding: 20px;
+    font-weight: 500;
+    font-size: large;
+    transition: 0.4s;
+}
+
+.logoutForm:hover {
+    background-color: #000f18;
+    cursor: pointer;
+}
+
+.logoutButton {
+    display: inline-block;
+    position: relative;
+    background-color: transparent;
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    color: white;
+    font: inherit;
+}
+
+.userLink {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-weight: 500;
+    font-size: large;
+    transition: 0.4s;
+}
+
 #navbar {
-    
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 0px;
+    background-color: var(--prussian-blue);
+    height: 60px;
+    z-index: 1;
+    /* Die Ebene auf der Z-Achse.*/
+    overflow-y: hidden;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.containerLeft {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    justify-content: start;
+    flex-direction: row;
+    align-items: center;
+}
+
+.homeLink,
+.decksLink {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-weight: 500;
+    font-size: large;
+    transition: 0.4s;
+}
+
+.homeLink:hover,
+.decksLink:hover {
+    background-color: #000f18;
+    cursor: pointer;
+}
+
+.containerRight {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    justify-content: end;
+    flex-direction: row;
+    align-items: center;
+}
+
+.registerLink,
+.loginLink {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-weight: 500;
+    font-size: large;
+    transition: 0.4s;
+}
+
+.registerLink:hover,
+.loginLink:hover {
+    background-color: #032335;
+    cursor: pointer;
 }

@@ -1,0 +1,10 @@
+.deckContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+#deckName {
+    text-align: center;
+}
